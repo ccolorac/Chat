@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat criverjarley</title>
+
+    <!--fuentes para el chat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href= "main.css">
+  </head>
+  <body>
+    <h1>Chat Bussines</h1>
+
+    <!--interfaz grafica del chat-->
+    <div id="chat-container">
+      <div id="chat-window">
+        <div id="output"></div>
+        <div id="actions"></div>
+      </div>
+      <input type="text" id="username" placeholder="Username"></input>
+      <input type="text" id="message" placeholder="message"></input>
+      <button id="send">send</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="chat.js" charset="utf-8"></script>
+  </body>
+</html>
