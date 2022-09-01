@@ -6,14 +6,14 @@ const express = require('express');
 const app = express();
 
 //settings port
-app.set('port', process.env.PORT || 3001);
+app.set('port', process.env.PORT || 3000);
 
 //config rutas - static files
 app.use(express.static(path.join(__dirname, 'public')));
 
 // start the server
 const server = app.listen(app.get('port'), () => {
-  console.log('server on port', app.get('port')), "192.168.1.14";
+  console.log('server on port', app.get('port'));
 });
 
 //websockets
